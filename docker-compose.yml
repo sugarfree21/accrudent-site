@@ -1,0 +1,8 @@
+services:
+    web:
+        image: httpd
+        container_name: beep_boop
+        ports:
+            - 12345:80
+        volumes:
+            - ./src:/usr/local/apache2/htdocs
