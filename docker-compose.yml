@@ -1,7 +1,7 @@
 services:
     web:
         image: httpd
-        container_name: beep_boop
+        container_name: accrudent
         ports:
             - 12345:80
         volumes:
