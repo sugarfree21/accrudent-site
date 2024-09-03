@@ -1,8 +1,9 @@
+version: "3"
 services:
     web:
-        image: httpd
+        image: php:apache
         container_name: accrudent
         ports:
             - 12345:80
         volumes:
-            - ./src:/usr/local/apache2/htdocs
+            - ./src:/var/www/html
