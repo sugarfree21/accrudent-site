@@ -64,7 +64,7 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim() == 'Message has been sent.') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
@@ -72,8 +72,7 @@
       }
     })
     .catch((error) => {
-      console.log("Something went wrong");
-      // displayError(thisForm, error);
+      displayError(thisForm, error);
     });
   }
 
