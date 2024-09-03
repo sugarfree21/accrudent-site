@@ -72,7 +72,8 @@
       }
     })
     .catch((error) => {
-      displayError(thisForm, error);
+      console.log("Something went wrong");
+      // displayError(thisForm, error);
     });
   }
 
