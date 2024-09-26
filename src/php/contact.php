@@ -9,7 +9,6 @@
   $from_email = $_POST['email'];
   $from_subject = $_POST['subject'];
   $from_message = $_POST['message'];
-  $secret_message = getenv("SECRET_TUNNEL");
 
   $mail = new PHPMailer(true);
 
@@ -18,11 +17,12 @@
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
   $mail->Username = 'tefthobber@gmail.com';
-  $mail->Password = 'REDACTED';
+  $mail->Password = 'yqooznutkfdhfpoj'; // Pushing to prod because I don't really have another choice rn. This will be changed ASAP
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port = 587;
 
   $mail->setFrom("tefthobber@gmail.com", "$from_name");
+  $mail->addReplyTo($from_email, $from_name);
 
   $mail->addAddress('contact@accrudent.com', 'AccruDent Contact'); 
 
@@ -30,7 +30,7 @@
 
   $mail->Subject = "$from_subject";
 
-  $mail->Body    = "You have recieved the following message from $from_email on the accrudent.com form:\n\n$from_message\n\n$secret_message";
+  $mail->Body    = "You have recieved the following message from $from_email on the accrudent.com form:\n\n$from_message\n\n";
 
   // Attempt to send the email
   if (!$mail->send()) {
