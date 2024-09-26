@@ -10,6 +10,10 @@
   $from_subject = $_POST['subject'];
   $from_message = $_POST['message'];
 
+  if (!filter_var($from_email, FILTER_VALIDATE_EMAIL)) {
+    die('Invalid email format');
+  }
+
   $mail = new PHPMailer(true);
 
   //Configure an SMTP
@@ -34,7 +38,8 @@
 
   // Attempt to send the email
   if (!$mail->send()) {
-      echo 'Email not sent. An error was encountered: ' . $mail->ErrorInfo;
+      error_log('Email not sent. An error was encountered: ' . $mail->ErrorInfo);
+      echo 'Error has occured, please reach out to contact@accrudent.com directly';
   } else {
       echo 'Message has been sent.';
   }
