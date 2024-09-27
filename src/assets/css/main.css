@@ -1448,6 +1448,10 @@ section,
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
+.our-team .cont-top {
+  margin-bottom: 3em;
+}
+
 .our-team .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -1478,10 +1482,15 @@ section,
   margin-bottom: 0;
 }
 
+.our-team .social a {
+  font-size: 2em;
+  margin-right: 5px;
+}
+
 /*--------------------------------------------------------------
 # Old Team Section
 --------------------------------------------------------------*/
-/* .team .team-member {
+.team .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
@@ -1547,7 +1556,7 @@ section,
 .team .team-member:hover .social {
   opacity: 1;
   bottom: 15px;
-} */
+}
 
 /*--------------------------------------------------------------
 # Recent Posts Section
@@ -2079,6 +2088,43 @@ section,
   .hero-sub h2 {
     font-size: 48px;
   }
+}
+
+/*--------------------------------------------------------------
+# Our Story Section
+--------------------------------------------------------------*/
+.our-story .cont-top {
+  margin-bottom: 3em;
+}
+
+.our-story .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.our-story .content .fst-italic {
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+
+.our-story .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.our-story .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.our-story .content ul i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.our-story .content p:last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
