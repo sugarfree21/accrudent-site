@@ -1647,6 +1647,8 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  text-decoration: none;
+  color: var(--default-color);
 }
 
 .contact .info-item:hover i {
