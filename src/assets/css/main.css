@@ -2076,6 +2076,10 @@ section,
   margin: 0 auto 30px auto;
 }
 
+.hero-sub p span {
+  color: var(--accent-color);
+}
+
 .hero-sub .btn-get-started {
   font-weight: 500;
   font-size: 14px;
@@ -2116,6 +2120,11 @@ section,
 .our-story .cont-top {
   margin-bottom: 3em;
 }
+
+/* .our-story .content {
+  top: 50%;
+  bottom: 50%;
+} */
 
 .our-story .content h3 {
   font-size: 1.75rem;
