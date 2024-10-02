@@ -872,6 +872,24 @@ section,
   transform: translate(5px, 0);
 }
 
+.about .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.about .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
