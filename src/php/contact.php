@@ -21,7 +21,7 @@
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
   $mail->Username = 'tefthobber@gmail.com';
-  $mail->Password = 'yqooznutkfdhfpoj'; // Pushing to prod because I don't really have another choice rn. This will be changed ASAP
+  $mail->Password = 'yqooznutkfdhfpoj'; // With the public push of this codebase, I've revoked this app password. Sorry about that hackers ;)
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port = 587;
 
